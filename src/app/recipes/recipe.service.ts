@@ -19,7 +19,9 @@ getRecipes(){
 return this.recipes.slice(); //slice() method is added so a COPY of the recipes array is returned.
 }
 constructor(private shoppingListService: ShoppingListService) { }
-
+ getRecipe(index:number) {
+   return this.recipes[index];
+ }
 
 // addIngredientsToShoppingList(ingredients:Ingredient[]){
 // this.shoppingListService.addRecIngredients(ingredients);
